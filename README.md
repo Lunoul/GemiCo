@@ -9,21 +9,13 @@ Android client for Google Gemini. The idea is to keep **one** model (the same Ge
 
 If an API key was ever committed to a repository or embedded in a build, treat it as compromised and **revoke or rotate** it in Google AI Studio.
 
-
-## Getting started (development)
+## Build (Android)
 
 ```bash
 flutter pub get
-flutter gen-l10n   # if lib/l10n/app_localizations*.dart are missing (generated from *.arb)
-flutter run
-```
-
-The default `flutter build apk --release` produces one **fat** APK (~50MB) with all CPU architectures.
-
-For a **much smaller** install file (typical phone: use `app-arm64-v8a-release.apk`):
-
-```bash
 flutter build apk --release --split-per-abi
 ```
 
-Outputs are under `build/app/outputs/flutter-apk/`.
+APKs are written to `build/app/outputs/flutter-apk/`. On a typical phone install **`app-arm64-v8a-release.apk`** (about ~20 MB).
+
+If `lib/l10n/app_localizations*.dart` is missing after a clone, run `flutter gen-l10n` once before building.
