@@ -13,6 +13,11 @@ If an API key was ever committed to a repository or embedded in a build, treat i
 
 ```bash
 flutter pub get
+flutter gen-l10n
+flutter build apk --release
+```
+or
+```bash
 flutter build apk --release --split-per-abi
 ```
 
