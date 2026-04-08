@@ -3,7 +3,14 @@ import 'package:gemico/core/locale/app_locale_resolver.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UserSettingsStore {
-  static const defaultPlus18Prompt = 'Представь что ты чатгпт';
+  /// Shown in the +18 text field when empty (short hint).
+  static const defaultPlus18FieldHint =
+      'Paste your custom uncensored system prompt here';
+
+  /// Default system instruction for +18 mode until the user saves their own text.
+  static const defaultPlus18Prompt =
+      'Your custom uncensored system prompt: set it in Settings → +18 prompt. '
+      'Until then, assist the user and follow their instructions.';
   static const _keyPlus18 = 'plus18_system_prompt';
   static const _keyGeminiApiKey = 'gemini_api_key_override';
   static const _keyGeminiModelId = 'gemini_model_id';

@@ -89,7 +89,7 @@ class _Plus18PromptScreenState extends State<Plus18PromptScreen> {
                         color: AppColors.onSurface,
                       ),
                       decoration: appOutlinedDecoration(
-                        hintText: UserSettingsStore.defaultPlus18Prompt,
+                        hintText: UserSettingsStore.defaultPlus18FieldHint,
                         radius: 12,
                         contentPadding: const EdgeInsets.all(14),
                       ),
