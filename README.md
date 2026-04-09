@@ -1,4 +1,4 @@
-# GemiCo
+# <div align="center">GemiCo<div>
 ![unnamed](https://github.com/user-attachments/assets/d002beab-cf66-467f-9750-134175ad4727)
 
 Android client for Google Gemini. The idea is to keep **one** model (the same Gemini model you pick in settings) for everything, but switch between a normal chat mode and a mode where **your own system prompt** is sent—so you can supply an “anti-censorship” or unrestricted-style instruction without relying on a separate censored product: you edit that text under **Settings → +18 prompt**, enable **+18** in the chat UI when you want it, and switch back to the default mode for ordinary use.
